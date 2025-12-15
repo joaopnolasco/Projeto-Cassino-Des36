@@ -1,114 +1,111 @@
-🎰 Desafio 36 – Cassino “A casa sempre ganha”
+# 🎰 Desafio 36 – Cassino “A casa sempre ganha”
 
-Disciplina: BI679 – Processamento de Informação
-Período: 2025.2
+**Disciplina:** BI679 – Processamento de Informação  
+**Período:** 2025.2  
 
-📌 Descrição do Projeto
+---
 
-Este projeto consiste na simulação de um caça-níquel de 3 símbolos, desenvolvido em Python, com o objetivo de demonstrar conceitos de probabilidade, processamento de informação e simulação computacional.
+## 📌 Descrição do Projeto
 
-O jogo foi implementado com interface gráfica, permitindo ao usuário jogar rodada por rodada ou simular todas as rodadas automaticamente até o encerramento do jogo.
+Este projeto consiste na simulação de um **caça-níquel de 3 símbolos**, desenvolvido em **Python**, com o objetivo de aplicar conceitos de **probabilidade, processamento de informação e simulação computacional**.
 
-O nome do desafio reflete o comportamento estatístico do sistema: na maioria das simulações, a casa tende a ganhar, embora o jogador possa eventualmente atingir o prêmio máximo.
+O jogo possui uma **interface gráfica**, permitindo que o usuário jogue rodada por rodada ou simule automaticamente todas as rodadas até o encerramento do jogo.
 
-🎰 Símbolos do Jogo e Probabilidades
+O título do desafio reflete o comportamento estatístico do sistema: no longo prazo, **a casa tende a ganhar**, embora o jogador possa eventualmente atingir o prêmio máximo.
 
-O caça-níquel possui 5 símbolos, cada um com uma probabilidade específica de ocorrência:
+---
 
-Símbolo	Probabilidade
-🪙 Moeda	50%
-💀 Caveira	20%
-7️⃣ Número 7	10%
-🍒 Cereja	10%
-✖️2 Símbolo 2X	10%
+## 🎰 Símbolos e Probabilidades
 
-Cada rodada sorteia 3 símbolos de forma aleatória, respeitando essas probabilidades.
+O caça-níquel utiliza cinco símbolos, cada um com uma probabilidade específica de ocorrência:
 
-💰 Regras do Jogo
-🎲 Custo e saldo inicial
+| Símbolo | Probabilidade |
+|-------|---------------|
+| 🪙 Moeda | 50% |
+| 💀 Caveira | 20% |
+| 7️⃣ Número 7 | 10% |
+| 🍒 Cereja | 10% |
+| ✖️2 Símbolo 2X | 10% |
 
-Cada giro custa R$ 1
+Cada rodada sorteia **3 símbolos aleatórios**, respeitando essas probabilidades.
 
-O jogador inicia o jogo com R$ 100
+---
 
-🏆 Premiações
-Combinação	Prêmio
-3 Moedas	R$ 3
-3 números 7	R$ 7
-3 Cerejas	R$ 30
-Par + 1 símbolo 2X	Dobra o prêmio da trinca correspondente
-Par de cerejas ou par de 7	R$ 1 (jogada free)
+## 💰 Regras do Jogo
 
-Exemplo:
+### 🎲 Custo e saldo inicial
+- Cada giro custa **R$ 1**
+- O jogador inicia com **R$ 100**
 
-2 Moedas + 1 símbolo 2X → prêmio de R$ 6
+---
 
-⚠️ Observações Importantes
+### 🏆 Premiações
 
-Qualquer símbolo de caveira na rodada resulta em perda da rodada
+| Combinação | Prêmio |
+|----------|--------|
+| 3 Moedas | R$ 3 |
+| 3 números 7 | R$ 7 |
+| 3 Cerejas | R$ 30 |
+| Par + 1 símbolo 2X | Dobra o prêmio da trinca correspondente |
+| Par de cerejas ou par de 7 | R$ 1 (jogada free) |
 
-Se ocorrerem 2 símbolos 2X, a rodada é automaticamente perdida
+**Exemplo:**  
+2 Moedas + 1 símbolo 2X → prêmio de **R$ 6**
 
-Rodadas perdidas não geram prêmio
+---
 
-🛑 Condições de Encerramento do Jogo
+### ⚠️ Observações
 
-O jogo é encerrado automaticamente quando:
+- A presença de **qualquer caveira** resulta em perda da rodada
+- Se ocorrerem **dois símbolos 2X**, a rodada é automaticamente perdida
+- Rodadas perdidas não geram prêmio
 
-O saldo do jogador chega a R$ 0 (jogador perde), ou
+---
 
-O saldo do jogador atinge R$ 200 ou mais (jogador vence)
+## 🛑 Condições de Encerramento
+
+O jogo é encerrado quando:
+
+- O saldo do jogador chega a **R$ 0**, ou
+- O saldo do jogador atinge **R$ 200 ou mais**
 
 Ao final, o sistema informa:
+- Total de rodadas jogadas
+- Saldo final
+- Resultado do jogo (vitória ou derrota)
 
-Quantidade total de rodadas jogadas
+---
 
-Saldo final
+## 🖥️ Interface Gráfica
 
-Resultado do jogo (vitória ou derrota)
+A interface gráfica foi desenvolvida com **Tkinter** e apresenta:
 
-🖥️ Interface Gráfica
+- Exibição visual dos símbolos do giro
+- Saldo atual do jogador
+- Contador de rodadas
+- Botão para jogar uma rodada
+- Botão para simular todas as rodadas automaticamente
+- Botão para reiniciar o jogo
 
-O projeto possui uma interface gráfica desenvolvida com Tkinter, contendo:
+---
 
-Exibição visual dos símbolos do giro (emojis)
+## 🧠 Objetivo Acadêmico
 
-Saldo atual do jogador
+O projeto busca:
 
-Contador de rodadas
+- Aplicar conceitos de probabilidade
+- Simular sistemas aleatórios
+- Utilizar estruturas condicionais e laços de repetição
+- Analisar o comportamento estatístico de jogos de azar
+- Demonstrar, por meio de simulação, que a casa possui vantagem no longo prazo
 
-Botão para jogar uma rodada
+---
 
-Botão para simular todas as rodadas automaticamente
+## ▶️ Execução do Projeto
 
-Botão para reiniciar o jogo
+1. Certifique-se de ter o **Python 3** instalado
+2. Salve o arquivo do jogo (exemplo: `cassino.py`)
+3. Execute no terminal:
 
-A interface permite tanto o uso interativo quanto a análise estatística do comportamento do jogo.
-
-🧠 Objetivo Acadêmico
-
-Este projeto tem como objetivos principais:
-
-Aplicar conceitos de probabilidade
-
-Simular sistemas aleatórios
-
-Trabalhar lógica condicional e controle de fluxo
-
-Analisar o comportamento estatístico de jogos de azar
-
-Demonstrar por simulação o conceito de que, no longo prazo, a casa tende a ganhar
-
-▶️ Execução do Projeto
-
-Certifique-se de ter o Python 3 instalado
-
-Salve o arquivo do jogo (ex: cassino.py)
-
-Execute no terminal:
-
+```bash
 python cassino.py
-
-📊 Considerações Finais
-
-Apesar de o jogador poder ganhar em algumas simulações, a estrutura de probabilidades e regras favorece o cassino, validando o conceito central do desafio. O projeto demonstra de forma prática como sistemas probabilísticos podem ser analisados através de simulação computacional.
